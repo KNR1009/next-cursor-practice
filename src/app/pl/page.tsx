@@ -38,15 +38,17 @@ export default function FinancialStatementsPage() {
 
       <div className="flex flex-col lg:flex-row gap-6">
         {/* メトリクスカード */}
-        <div className="lg:w-1/3 grid grid-cols-1 gap-4">
-          <MetricCard
-            title="売上高"
-            value={metrics.売上高}
-            subtitle="着地見込 - 仮テキスト"
-            unit="千円"
-            companyCount={320}
-            yearOverYear={0.00}
-          />
+        <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="col-span-1 md:col-span-2">
+            <MetricCard
+              title="売上高"
+              value={metrics.売上高}
+              subtitle="着地見込 - 仮テキスト"
+              unit="千円"
+              companyCount={320}
+              yearOverYear={0.00}
+            />
+          </div>
           <MetricCard
             title="売上総利益"
             value={metrics.売上総利益}
@@ -82,7 +84,7 @@ export default function FinancialStatementsPage() {
         </div>
 
         {/* グラフ */}
-        <div className="lg:w-2/3 h-[600px]">
+        <div className="lg:w-1/2 h-[600px]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={chartData}>
               <CartesianGrid strokeDasharray="3 3" />
