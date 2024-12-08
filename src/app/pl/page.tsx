@@ -93,9 +93,9 @@ export default function FinancialStatementsPage() {
               />
               <Tooltip formatter={(value) => `${(Number(value) / 1000).toLocaleString()}百万円`} />
               <Legend />
-              <Bar dataKey="売上高" fill="#3B82F6" />
-              <Bar dataKey="売上総利益" fill="#10B981" />
-              <Bar dataKey="売上原価" fill="#EF4444" />
+              <Bar dataKey="売上高" fill="#0066BE" />
+              <Bar dataKey="売上総利益" fill="#00428C" />
+              <Bar dataKey="売上原価" fill="#00234B" />
             </BarChart>
           </ResponsiveContainer>
         </div>
